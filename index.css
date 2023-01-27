@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  background: orange;
+}
+.heading {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  animation-name: blinking;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes blinking {
+  0% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+#search-div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 20%;
+  margin: 60px auto;
+}
+#search-div label {
+  font-size: 1.4rem;
+}
+#search-div #query {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+}
+#search-div #query::placeholder,
+#search-div #query:focus {
+  font-size: 1rem;
+  font-weight: bolder;
+  outline: none;
+}
+#query:hover {
+  scale: 1.2;
+}
+#searchBtn {
+  border-radius: 12px;
+  width: 60%;
+  margin: auto;
+  padding: 18px 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  background-color: bisque;
+}
+#searchBtn:hover,
+#mealDetailBtn:hover {
+  scale: 0.9;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#container #meal-card {
+  background-color: azure;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  line-height: 1.8;
+}
+#meal-card img {
+  border-radius: 50%;
+  width: 420px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#mealDetailBtn {
+  display: block;
+  margin: 30px auto 0;
+  width: 60%;
+  padding: 18px 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background-image: linear-gradient(yellow, orangered);
+  color: #fff;
+}
+#main-div {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: azure;
+  padding: 30px 40px;
+  width: 70%;
+  margin: auto auto 30px;
+  border-radius: 12px;
+}
+.top-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  line-height: 2;
+  padding: 30px 40px;
+  font-size: 1.6rem;
+}
+.top-div img {
+  width: 520px;
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.ingredient-div,
+.instructions-div {
+  line-height: 1.8;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: justify;
+}
+#error-card {
+  text-align: center;
+  line-height: 2;
+  background-color: beige;
+  color: red;
+  padding: 25px 50px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media only screen and (max-width: 425px) {
+  #search-div {
+    gap: 10px;
+    width: 90%;
+  }
+  #search-div label {
+    font-size: 1.2rem;
+  }
+  #search-div #query {
+    font-size: 0.8rem;
+  }
+  #search-div #query::placeholder,
+  #search-div #query:focus {
+    font-size: 0.8rem;
+  }
+  #query:hover {
+    scale: 1;
+  }
+  #searchBtn {
+    border-radius: 10px;
+    padding: 12px 0;
+    font-size: 0.8rem;
+  }
+  #container #meal-card {
+    border-radius: 10px;
+    line-height: 0.8;
+    font-size: 0.8rem;
+  }
+  #meal-card img {
+    width: 280px;
+  }
+  #mealDetailBtn {
+    padding: 12px 0;
+    font-size: 0.8rem;
+    border-radius: 10px;
+  }
+  .top-div {
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+  .top-div img {
+    width: 320px;
+    border-radius: 12px;
+  }
+  .ingredient-div,
+  .instructions-div {
+    line-height: 1.2;
+    gap: 0;
+    font-size: 1rem;
+    padding: 30px 10px;
+  }
+  #error-card {
+    line-height: 1.2;
+    padding: 20px 40px;
+  }
+}
