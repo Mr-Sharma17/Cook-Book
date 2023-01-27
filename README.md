@@ -3,7 +3,7 @@ Have a look *[here](https://cook-book-webapp.netlify.app/)*.
 
 
 # About
-The Cook-Book is a web application where user can search for any meal and can get its detailes and receipe too.
+The Cook-Book is a web application where user can search for any meal and can get its detailes and recipe too.
 
 ### Features :
 >
@@ -49,4 +49,4 @@ The Cook-Book is a web application where user can search for any meal and can ge
 *****Feedback and Suggestions are always Welcomed.***
 
 
-:bulb: **Tip:** Failure is not the opposite of success, it is part of success.
+:bulb: **Tip:** Failure is not the opposite of success, it is a part of success.
