@@ -6,15 +6,18 @@ const container = document.getElementById('container');
 //fetching data logic
 const getMeal = async () => {
     try {
+        btn.style.scale = 0.9;
         btn.innerText = "Searching...";
         container.innerHTML = `<div><h1>Loading...</h1></div>`;
         const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${q.value.trim()}`);
         const data = await res.json();
         btn.innerText = "Search";
+        btn.style.scale = 1;
         const myMeal = data.meals[0]; //assigning data forcefully for ease
         appendMeal(myMeal); //appending data after fetching
     } catch (error) {
         btn.innerText = "Search";
+        btn.style.scale = 1;
         console.log(error);
         //this info will render when error occurs
         container.innerHTML = `<div id='error-card' >

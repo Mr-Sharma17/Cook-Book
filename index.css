@@ -66,7 +66,10 @@ body {
   cursor: pointer;
   background-color: bisque;
 }
-#searchBtn:hover,
+#searchBtn:hover {
+  background: rgb(69, 69, 238);
+  color: #fff;
+}
 #mealDetailBtn:hover {
   scale: 0.9;
 }
@@ -87,6 +90,10 @@ body {
   border-radius: 50%;
   width: 420px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: transform 2s;
+}
+#meal-card img:hover {
+  transform: rotate(360deg);
 }
 #mealDetailBtn {
   display: block;
@@ -124,6 +131,10 @@ body {
   width: 520px;
   border-radius: 15px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: transform 2s;
+}
+.top-div img:hover {
+  transform: rotate(360deg);
 }
 .ingredient-div,
 .instructions-div {
